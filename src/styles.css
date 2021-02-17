@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+
+/* Estilos globales  */
+:root{
+    /* colores  */
+    --color-black: #12242B;
+    --color-white: #ffff;
+    --color-primary: #A758AE;
+    --color-secondary: #786EC1;
+    --color-text: #2E313A;
+    --color-text-secondary: #828282;
+
+    /* textos  */
+    --text-sm: 12px;
+}
+
+/* general  */
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* colores  */
+.color-black{
+    background-color: var(--color-black);
+}
+
+.color-white{
+    color: var(--color-white);
+}
+
+.color-primary{
+    color: var(--color-primary);
+}
+
+.color-secondary{
+    color: var(--color-secondary);
+}
+
+.color-text{
+    color: var(--color-text);
+}
+
+.color-text-secondary{
+    color: var(--color-text-secondary);
+}
+
+
+
+/* textos  */
+.text-sm{
+    font-size: var(--text-sm);
+}
+
+ 
+/* social networks  */
+.social-media{
+    color: var(--color-primary);
+    margin-left: 10px;
+    font-size: 25px;
+}
+
+.social-media:hover{
+    color: var(--color-white);
+}
+
+
+
+/* enlaces a  */
+a{
+    text-decoration: none;
+    color: var(--color-white);
+}
+
+a:hover{
+    color: var(--color-primary);
+}
