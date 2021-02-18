@@ -7,44 +7,47 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  // myStyle: object = {};
-  // myParams: object = {};
-  // width: number = 100;
-  // height: number = 100;
+  myStyleP: object = {};
+  myParamsP: object = {};
+  widthP: number = 100;
+  heightP: number = 100;
 
   constructor() { }
 
   ngOnInit(): void {
+    // particulas fixed acerca de mi 
+    this.myStyleP = {
+      'position': 'fixed',
+      'width': '100%',
+      'height': '100%',
+      'z-index': -1,
+      'top': 0,
+      'left': 0,
+      'right': 0,
+      'bottom': 0,
+    };
+    this.myParamsP = {
+      particles: {
+        number: {
+          value: 20,
+        },
+        color: {
+          value: '#A758AE'
+        },
+        shape: {
+          type: 'circle',
+        },
+      }
+    };
 
-    //     this.myStyle = {
-    //       'position': 'fixed',
-    //       'width': '100%',
-    //       'height': '100%',
-    //       'z-index': -1,
-    //       'top': 0,
-    //       'left': 0,
-    //       'right': 0,
-    //       'bottom': 0,
-    //   };
 
-    // this.myParams = {
-    //       particles: {
-    //           number: {
-    //               value: 100,
-    //           },
-    //           color: {
-    //               value: '#A758AE'
-    //           },
-    //           shape: {
-    //               type: 'circle',
-    //           },
-    //   }
-    // };
 
   }
 
 
 
+
+  // particulas home 
   width: number = 50;
   height: number = 100;
   myStyle: Object = {
