@@ -10,4 +10,7 @@
     padding: 70px;
 }
 
- 
+.footer .particles-footer{
+    width: 100%;
+    height: 100px;
+}
