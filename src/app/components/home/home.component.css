@@ -66,6 +66,18 @@ a:hover{
     padding: 20px;
 }
 
+/* titulo proyectos  */
+.titulo-proyect{
+    font-weight: bold;
+}
+.titulo-proyect::before{
+    position: absolute;
+    content: "SEITAM";
+    font-size: 60px;
+    opacity: 0.1;
+    top: 0;
+ }
+
 /* etiquetas proyectos  */
 .etiqueta-proyect{
     background-color: #fff;
