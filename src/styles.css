@@ -105,16 +105,6 @@
 
 
 
-/* enlaces a  */
-a{
-    text-decoration: none;
-    color: var(--color-white);
-}
-
-a:hover{
-    color: var(--color-primary);
-}
-
 
 
 /* botones  */
