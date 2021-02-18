@@ -45,8 +45,6 @@ export class FooterComponent implements OnInit {
   }
 
 
-
-
   // particulas home 
   width: number = 50;
   height: number = 100;
