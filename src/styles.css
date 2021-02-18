@@ -16,7 +16,22 @@
 /* general  */
 *{
     font-family: 'Poppins', sans-serif;
+
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
+
+*::selection {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
+*::-moz-selection {
+    background: var(--color-primary);
+    color: var(--color-white);
+}
+
 
 
 /* colores  */
@@ -24,13 +39,29 @@
     background-color: var(--color-black);
 }
 
+.color-black-fondo{
+    background-color: var(--color-black);
+    color:  var(--color-white);
+}
+
 .color-white{
     color: var(--color-white);
 }
 
+.color-white-fondo{
+    background-color: var(--color-white);
+}
+
+
 .color-primary{
     color: var(--color-primary);
 }
+
+.color-primary-fondo{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
 
 .color-secondary{
     color: var(--color-secondary);
@@ -51,6 +82,15 @@
     font-size: var(--text-sm);
 }
 
+.title-primary{
+    font-weight: bold;
+}
+
+.title-secondary{
+    font-weight: 200;
+}
+
+ 
  
 /* social networks  */
 .social-media{

@@ -1,4 +1,4 @@
-/* .portada{
+.portada{
     background-image: url(/../assets/images/portada-home.png);
     padding-top: 90px;
     height: 100vh;
@@ -6,7 +6,7 @@
     display: flex;
     background-size: cover;
     position: relative;
-} */
+}
 
 .text-home-portada{
     position:  absolute;
