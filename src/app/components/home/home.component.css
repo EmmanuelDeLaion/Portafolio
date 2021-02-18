@@ -57,3 +57,20 @@ a{
 a:hover{
     color: var(--color-primary);
 }
+
+
+/* secciones proyetos  */
+.container-proyects{
+    width: 100%;
+    background: linear-gradient(to bottom, #A758AE, #786EC1);
+    padding: 20px;
+}
+
+/* etiquetas proyectos  */
+.etiqueta-proyect{
+    background-color: #fff;
+    color: #A758AE;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 2px;
+}
