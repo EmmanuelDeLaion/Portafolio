@@ -76,7 +76,9 @@ a:hover{
     background-color: transparent;
     border: 1px solid #A758AE;
     border-radius: 10px;
-    padding: 15px 0 15px 0 ;
+    padding: 15px 0 15px 0;
+    transition: 0.5s;
+    cursor: default;
 }
 
 .container-proyects-list:hover{
@@ -95,14 +97,31 @@ a:hover{
 
 /* titulo proyectos  */
 /* titulos bold  */
-.titulo-proyect-cotacyt, .titulo-proyect-plataforma{
+.titulo-experiencia, .titulo-experiencia-academica, .titulo-proyect-cotacyt, .titulo-proyect-plataforma{
     font-weight: bold;
 }
+
+.titulo-experiencia::before{
+    position: absolute;
+    content: "Experiencia Laboral";
+    font-size: 50px;
+    opacity: 0.1;
+    top: 0;
+}
+
+.titulo-experiencia-academica::before{
+    position: absolute;
+    content: "Experiencia Académica";
+    font-size: 50px;
+    opacity: 0.1;
+    top: 0;
+}
+
 /* titulos fondos  */
 .titulo-proyect-cotacyt::before{
     position: absolute;
     content: "COTACYT";
-    font-size: 50px;
+    font-size: 30px;
     opacity: 0.1;
     top: 0;
  }
@@ -110,7 +129,7 @@ a:hover{
  .titulo-proyect-plataforma::before{
     position: absolute;
     content: "Plataforma Premio Estatal 2020";
-    font-size: 50px;
+    font-size: 30px;
     opacity: 0.1;
     top: 0;
  }
