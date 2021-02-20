@@ -289,7 +289,7 @@ a:hover{
     white -0.15em -0.1em 100px;
   } */
 
- 
+  
   /* clase de footer mover */
   .imagen-forma-footer{
     position: absolute;
@@ -327,3 +327,28 @@ a:hover{
     border-radius: 20px;
 }
  
+
+@media (max-width: 600px){
+    .render{
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 365px){
+    .render{
+        font-size: 30px;
+    }
+    /* .titulo-experiencia, 
+    .titulo-experiencia-academica{
+        font-size: 20px;
+    }  */
+    .titulo-experiencia::before{
+        font-size: 30px;
+    } 
+    .titulo-experiencia-contactame::before{
+        font-size: 30px;
+    } 
+    .titulo-experiencia-academica::before{
+        font-size: 30px;
+    }
+}
