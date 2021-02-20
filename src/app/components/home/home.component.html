@@ -446,22 +446,23 @@
             </div>
             <div class="col-12 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
                 <p class="text-sm">Ingrese sus datos para contactarme</p>
-                <form>
+                <form  [formGroup] = "formContacto">
                     <div class="mb-3">
-                        <input type="text" class="form-control inputs" placeholder="Nombre" id="nombre"
+                        <input formControlName="nombre" type="text" class="form-control inputs" placeholder="Nombre" id="nombre"
                             aria-describedby="emailHelp">
                     </div>
 
                     <div class="mb-3">
-                        <input type="email" class="form-control inputs" placeholder="Correo" id="exampleInputEmail1"
+                        <input formControlName="correo" type="email" class="form-control inputs" placeholder="Correo" id="exampleInputEmail1"
                             aria-describedby="emailHelp">
                     </div>
 
                     <div class="mb-3">
-                        <textarea class="form-control inputs" placeholder="Mensaje" id="exampleFormControlTextarea1"
+                        <textarea formControlName="mensaje" class="form-control inputs" placeholder="Mensaje" id="exampleFormControlTextarea1"
                             rows="3"></textarea>
                     </div>
-                    <button (click)="enviarMensaje()" type="button" class="btn w-100 button-primary-normal ">Enviar </button>
+                    <button (click)="enviarMensaje()" type="button" class="btn w-100 button-primary-normal ">Enviar
+                    </button>
                 </form>
             </div>
         </div>

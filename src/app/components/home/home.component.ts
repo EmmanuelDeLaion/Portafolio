@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Swal from 'sweetalert2';
+import { FormGroup, Validators, FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,17 @@ import Swal from 'sweetalert2';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  formContacto: FormGroup;
+
+  constructor(
+    private formBuilder: FormBuilder
+  ) {
+    this.formContacto = this.formBuilder.group({
+      nombre: ['', [Validators.required]],
+      correo: ['', [Validators.email]],
+      mensaje: ['', [Validators.required]]
+    });
+  }
 
   ngOnInit(): void {
 
@@ -17,16 +28,26 @@ export class HomeComponent implements OnInit {
 
 
   enviarMensaje() {
-    Swal.fire({
-      title: 'Mensaje enviado',
-      text: 'Su mensaje se envió correctamente',
-      icon: 'success',
-      confirmButtonText: 'Aceptar',
-      timer: 1500
-    })
+    console.log(this.formContacto.value);
+    if (this.formContacto.value.nombre != "" && this.formContacto.value.correo != "" && this.formContacto.value.mensaje != "") {
+      Swal.fire({
+        icon: 'success',
+        title: 'Tu mensaje se ha enviado correctamente'
+      });
+      this.formContacto.reset();
+     }
+    else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Verifique los campos'
+      });
+    }
+
+   
+ 
   }
 
-
-
-
+ 
 }
+
+
