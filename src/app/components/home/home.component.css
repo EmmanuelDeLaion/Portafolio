@@ -300,6 +300,8 @@ a:hover{
 }
 
 
+
+
 .imagen-forma-footer-derecha{
     position: absolute;
     top:10%;
@@ -308,6 +310,14 @@ a:hover{
     opacity: .5;
 }
 
+
+.imagen-forma-proyect{
+    position: absolute;
+    top: 80%;
+    right: 0px;
+    width: 10%;
+    opacity: .1;
+}
 
 
 /* inputs  */
