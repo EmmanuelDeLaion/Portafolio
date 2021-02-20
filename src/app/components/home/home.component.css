@@ -97,7 +97,15 @@ a:hover{
 
 /* titulo proyectos  */
 /* titulos bold  */
-.titulo-experiencia, .titulo-experiencia-academica, .titulo-proyect-cotacyt, .titulo-proyect-plataforma{
+.titulo-experiencia, 
+.titulo-experiencia-academica, 
+.titulo-proyect-cotacyt, 
+.titulo-proyect-plataforma, 
+.titulo-proyect-congreso, 
+.titulo-proyect-next, 
+.titulo-proyect-borrados,
+.titulo-proyect-kabum,
+.titulo-proyect-kfood{
     font-weight: bold;
 }
 
@@ -133,6 +141,55 @@ a:hover{
     opacity: 0.1;
     top: 0;
  }
+
+ .titulo-proyect-congreso::before{
+    position: absolute;
+    content: "Congreso ITSM 2020";
+    font-size: 30px;
+    opacity: 0.1;
+    top: 0;
+ }
+
+ .titulo-proyect-next::before{
+    position: absolute;
+    content: "NextPhoto";
+    font-size: 30px;
+    opacity: 0.1;
+    top: 0;
+ }
+
+ .titulo-proyect-borrados::before{
+    position: absolute;
+    content: "Borrado´s Crochet";
+    font-size: 30px;
+    opacity: 0.1;
+    top: 0;
+ }
+
+
+ .titulo-proyect-kabum::before{
+    position: absolute;
+    content: "KABUM";
+    font-size: 30px;
+    opacity: 0.1;
+    top: 0;
+ }
+
+ .titulo-proyect-kfood::before{
+    position: absolute;
+    content: "KFood";
+    font-size: 30px;
+    opacity: 0.1;
+    top: 0;
+ }
+
+
+
+
+
+
+
+
 
 
 /* etiquetas proyectos  */
