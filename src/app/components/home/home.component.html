@@ -19,7 +19,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                    <a class="nav-link" href="#contacto">Contacto</a>
                 </li>
             </ul>
         </div>
@@ -430,7 +430,7 @@
 
 
 
-<section class="color-black-fondo seccion-contactame position-relative">
+<section class="color-black-fondo seccion-contactame position-relative" id="contacto">
     <img class="imagen-forma-footer" src="../../assets/images/forma1.png" alt="">
     <img class="imagen-forma-footer-derecha" src="../../assets/images/forma3.png" alt="">
 
@@ -461,7 +461,7 @@
                         <textarea class="form-control inputs" placeholder="Mensaje" id="exampleFormControlTextarea1"
                             rows="3"></textarea>
                     </div>
-                    <button class="btn w-100 button-primary-normal ">Enviar </button>
+                    <button (click)="enviarMensaje()" type="button" class="btn w-100 button-primary-normal ">Enviar </button>
                 </form>
             </div>
         </div>

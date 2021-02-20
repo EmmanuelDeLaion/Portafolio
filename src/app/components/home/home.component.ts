@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-home',
@@ -15,7 +16,17 @@ export class HomeComponent implements OnInit {
   }
 
 
-  
-   
+  enviarMensaje() {
+    Swal.fire({
+      title: 'Mensaje enviado',
+      text: 'Su mensaje se envió correctamente',
+      icon: 'success',
+      confirmButtonText: 'Aceptar',
+      timer: 1500
+    })
+  }
+
+
+
 
 }
