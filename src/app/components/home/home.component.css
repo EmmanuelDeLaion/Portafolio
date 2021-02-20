@@ -105,7 +105,9 @@ a:hover{
 .titulo-proyect-next, 
 .titulo-proyect-borrados,
 .titulo-proyect-kabum,
-.titulo-proyect-kfood{
+.titulo-proyect-kfood,
+.titulo-experiencia-contactame
+{
     font-weight: bold;
 }
 
@@ -120,6 +122,14 @@ a:hover{
 .titulo-experiencia-academica::before{
     position: absolute;
     content: "Experiencia Académica";
+    font-size: 50px;
+    opacity: 0.1;
+    top: 0;
+}
+
+.titulo-experiencia-contactame::before{
+    position: absolute;
+    content: "Contáctame";
     font-size: 50px;
     opacity: 0.1;
     top: 0;
@@ -182,6 +192,8 @@ a:hover{
     opacity: 0.1;
     top: 0;
  }
+
+ 
 
 
 /* etiquetas proyectos  */
@@ -277,4 +289,31 @@ a:hover{
     white -0.15em -0.1em 100px;
   } */
 
+ 
+  /* clase de footer mover */
+  .imagen-forma-footer{
+    position: absolute;
+    top:60%;
+    left: 0px;
+    width: 10%;
+    opacity: .1;
+}
+
+
+.imagen-forma-footer-derecha{
+    position: absolute;
+    top:10%;
+    right:0;
+    width: 11%;
+    opacity: .5;
+}
+
+
+
+/* inputs  */
+.inputs{
+    background-color: transparent;
+    color: #fff;
+    border-radius: 20px;
+}
  
