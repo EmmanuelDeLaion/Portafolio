@@ -29,7 +29,7 @@ export class FooterComponent implements OnInit {
     this.myParamsP = {
       particles: {
         number: {
-          value: 20,
+          value: 50,
         },
         color: {
           value: '#A758AE'
