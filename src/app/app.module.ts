@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { FooterComponent } from './components/shared/footer/footer.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
