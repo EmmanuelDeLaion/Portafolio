@@ -20,7 +20,8 @@ export class HomeComponent implements OnInit {
   ) {
     this.formContacto = this.formBuilder.group({
       nombre: ['', [Validators.required]],
-      correo: ['', [Validators.required]],
+      correo: ['', [Validators.email]],
+      numero: ['', [Validators.required]],
       mensaje: ['', [Validators.required]]
     });
   }
@@ -36,7 +37,7 @@ export class HomeComponent implements OnInit {
     console.log(this.formContacto.value);
     this._MessageService.sendMessage(this.formContacto.value).subscribe(res => {
       console.log(res);
-      if (this.formContacto.value.nombre != "" && this.formContacto.value.correo != "" && this.formContacto.value.mensaje != "") {
+      if (this.formContacto.value.nombre != "" && this.formContacto.value.correo != "" && this.formContacto.value.numero != "" && this.formContacto.value.mensaje != "") {
         Swal.fire({
           icon: 'success',
           title: 'Enviado',
