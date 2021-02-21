@@ -446,20 +446,25 @@
             </div>
             <div class="col-12 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
                 <p class="text-sm">Ingrese sus datos para contactarme</p>
-                <form  [formGroup] = "formContacto">
+                <form [formGroup]="formContacto">
                     <div class="mb-3">
-                        <input formControlName="nombre" type="text" class="form-control inputs" placeholder="Nombre" id="nombre"
-                            aria-describedby="emailHelp">
+                        <input formControlName="nombre" type="text" class="form-control inputs" placeholder="Nombre"
+                            id="nombre" aria-describedby="emailHelp">
                     </div>
 
                     <div class="mb-3">
-                        <input formControlName="correo" type="email" class="form-control inputs" placeholder="Correo" id="exampleInputEmail1"
-                            aria-describedby="emailHelp">
+                        <input formControlName="correo" type="email" class="form-control inputs" placeholder="Correo"
+                            id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
 
                     <div class="mb-3">
-                        <textarea formControlName="mensaje" class="form-control inputs" placeholder="Mensaje" id="exampleFormControlTextarea1"
-                            rows="3"></textarea>
+                        <input formControlName="numero" type="tel" class="form-control inputs" placeholder="teléfono"
+                            id="telefono" aria-describedby="telefono">
+                    </div>
+
+                    <div class="mb-3">
+                        <textarea formControlName="mensaje" class="form-control inputs" placeholder="Mensaje"
+                            id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
                     <button (click)="enviarMensaje()" type="button" class="btn w-100 button-primary-normal mb-5">Enviar
                     </button>
