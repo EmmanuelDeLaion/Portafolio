@@ -346,6 +346,16 @@ a:hover{
     color: #fff;
     border-radius: 20px;
 }
+
+
+.navbar-toggler{
+    color: #fff;
+    background-color: #A758AE;
+}
+
+.navbar-toggler-icon{
+    color: #fff;
+}
  
 
 @media (max-width: 600px){
