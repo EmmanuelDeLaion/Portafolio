@@ -5,6 +5,8 @@ import { FormGroup, Validators, FormBuilder, FormsModule, ReactiveFormsModule } 
 // import contacto 
 import { MessageService } from '../../services/message.service';
 
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -16,7 +18,7 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private formBuilder: FormBuilder,
-    public _MessageService: MessageService
+    public _MessageService: MessageService,
   ) {
     this.formContacto = this.formBuilder.group({
       nombre: ['', [Validators.required]],
@@ -33,6 +35,7 @@ export class HomeComponent implements OnInit {
 
 
   enviarMensaje() {
+    // this._utilService.loading = true;
 
     console.log(this.formContacto.value);
     this._MessageService.sendMessage(this.formContacto.value).subscribe(res => {
@@ -45,6 +48,7 @@ export class HomeComponent implements OnInit {
           timer: 1500
         });
         this.formContacto.reset();
+
       }
       else {
         Swal.fire({
@@ -60,6 +64,7 @@ export class HomeComponent implements OnInit {
 
       }
     );
+
 
 
   }

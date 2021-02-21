@@ -51,13 +51,33 @@
 /* enlaces a  */
 a{
     text-decoration: none;
-    color: var(--color-text-secondary);
+    color: var(--color-text-secondary); 
 }
 
 a:hover{
     color: var(--color-primary);
 }
 
+
+.button-primary-normal-home{
+    background-color: #A758AE;
+    color: #fff;
+}
+.button-primary-normal-home:hover{
+    background-color: #786EC1;
+    color: #fff;
+}
+
+.button-primary-outline-home{
+    border: 1px solid #A758AE;
+    background-color: transparent;
+    color: #A758AE;
+}
+
+.button-primary-outline-home:hover{
+    color: #fff;
+    background-color: #a758ae67;
+}
 
 /* secciones proyetos  */
 .container-proyects{
@@ -296,7 +316,7 @@ a:hover{
     top:60%;
     left: 0px;
     width: 10%;
-    opacity: .1;
+    opacity: .5;
 }
 
 
