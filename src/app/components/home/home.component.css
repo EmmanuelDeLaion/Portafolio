@@ -143,13 +143,13 @@
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   overflow: hidden;
   top: 0;
   right: 0;
   background-color: #A758AE;
-  border-radius: 0 4px 0 32px;
+  border-radius: 0 4px 0 40px;
 }
 
 .go-arrow {
@@ -187,7 +187,7 @@
   }
 
   .card1:hover:before {
-    transform: scale(21);
+    transform: scale(23);
   }
 
 
