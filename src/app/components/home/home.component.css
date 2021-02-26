@@ -455,32 +455,11 @@ a:hover{
       rgba(16, 16, 16, 0.4) 1px 30px 65px,
       white -0.15em -0.1em 100px;
   }
-/*  
-  .render:hover{
-    margin-top: -20px;
-    text-shadow:
-    white 0.006em 0.006em 0.007em,
-    #9c9c9c 1px 1px 1px,
-    #9c9c9c 1px 2px 1px,
-    #9c9c9c 1px 3px 1px,
-    #9c9c9c 1px 4px 1px,
-    #9c9c9c 1px 5px 1px,
-    #9c9c9c 1px 6px 1px,
-    #9c9c9c 1px 7px 1px,
-    #9c9c9c 1px 8px 1px,
-    #9c9c9c 1px 9px 1px,
-    #9c9c9c 1px 10px 1px,
-    #9c9c9c 1px 11px 1px,
-    #9c9c9c 1px 12px 1px,
-    rgba(16, 16, 16, 0.4) 1px 38px 26px,
-    rgba(16, 16, 16, 0.2) 1px 42px 30px,
-    rgba(16, 16, 16, 0.2) 1px 46px 65px,
-    rgba(16, 16, 16, 0.4) 1px 50px 95px,
-    white -0.15em -0.1em 100px;
-  } */
-
+ 
   
   /* clase de footer mover */
+
+  /* contacto  */
   .imagen-forma-footer{
     position: absolute;
     top:60%;
@@ -488,8 +467,6 @@ a:hover{
     width: 10%;
     opacity: .5;
 }
-
-
 
 
 .imagen-forma-footer-derecha{
@@ -509,6 +486,12 @@ a:hover{
     opacity: .1;
 }
 
+.img-contact{
+    position: absolute;
+    left: 25%;
+    width: 200px;
+    opacity: 0.5;
+}
 
 /* inputs  */
 .inputs{
@@ -534,7 +517,7 @@ a:hover{
     }
 }
 
-@media (max-width: 365px){
+@media (max-width: 380px){
     .render{
         font-size: 30px;
     }
