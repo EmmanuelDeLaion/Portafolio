@@ -1,4 +1,9 @@
+import { AotSummaryResolver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
+
+//AOS init scroll
+import * as AOS from 'aos';
+
 
 @Component({
   selector: 'app-footer',
@@ -12,7 +17,9 @@ export class FooterComponent implements OnInit {
   widthP: number = 100;
   heightP: number = 100;
 
-  constructor() { }
+  constructor() { 
+    AOS.init();
+  }
 
   ngOnInit(): void {
     // particulas fixed acerca de mi 
