@@ -154,6 +154,10 @@ body::-webkit-scrollbar-thumb{
     padding: 100px 20px 0 20px;
 }
 
+.seccion-services{
+    padding: 0 20px 100px 20px;
+}
+
 /* etiquetas  */
 .etiquetas{
     width: 100%;
