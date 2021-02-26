@@ -462,4 +462,16 @@ a:hover{
     .titulo-experiencia-academica::before{
         font-size: 30px;
     }
+
+    
+}
+
+@media (max-width: 380px){
+    .btn-cv,
+    .btn-conoceme,
+    .btn-mi-trabajo
+    {
+        width: 100%;
+        margin: 0;
+    }
 }
