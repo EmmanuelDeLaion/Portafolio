@@ -121,7 +121,6 @@
 /* sobre mi  */
 .imagen-perfil-sobremi{
     width: 100%;
-    height: 70%;
     object-fit: cover;
     border-radius: 10px;
 }
