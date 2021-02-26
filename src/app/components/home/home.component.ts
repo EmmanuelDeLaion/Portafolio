@@ -4,7 +4,10 @@ import { FormGroup, Validators, FormBuilder, FormsModule, ReactiveFormsModule } 
 
 // import contacto 
 import { MessageService } from '../../services/message.service';
+import { AotSummaryResolver } from '@angular/compiler';
 
+//AOS init scroll
+import * as AOS from 'aos';
 
 
 @Component({
@@ -29,8 +32,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
-
+    AOS.init();
   }
 
 
