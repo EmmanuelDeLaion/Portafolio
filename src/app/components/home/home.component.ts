@@ -37,8 +37,6 @@ export class HomeComponent implements OnInit {
 
   enviarMensaje() {
     // this._utilService.loading = true;
-
-    console.log(this.formContacto.value);
     this._MessageService.sendMessage(this.formContacto.value).subscribe(res => {
       console.log(res);
       if (this.formContacto.value.nombre != "" && this.formContacto.value.correo != "" && this.formContacto.value.numero != "" && this.formContacto.value.mensaje != "") {
