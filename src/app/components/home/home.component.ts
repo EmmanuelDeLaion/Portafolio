@@ -9,6 +9,10 @@ import { AotSummaryResolver } from '@angular/compiler';
 //AOS init scroll
 import * as AOS from 'aos';
 
+//loading
+import { UtilsService } from '../../services/utils.service'
+
+
 
 @Component({
   selector: 'app-home',
@@ -21,6 +25,7 @@ export class HomeComponent implements OnInit {
   constructor(
     private formBuilder: FormBuilder,
     public _MessageService: MessageService,
+    private _utilService: UtilsService
   ) {
     this.formContacto = this.formBuilder.group({
       nombre: ['', [Validators.required]],
@@ -36,7 +41,7 @@ export class HomeComponent implements OnInit {
 
 
   enviarMensaje() {
-    // this._utilService.loading = true;
+    this._utilService.cargando = true;
     this._MessageService.sendMessage(this.formContacto.value).subscribe(res => {
       console.log(res);
       if (this.formContacto.value.nombre != "" && this.formContacto.value.correo != "" && this.formContacto.value.numero != "" && this.formContacto.value.mensaje != "") {
@@ -47,7 +52,7 @@ export class HomeComponent implements OnInit {
           timer: 1500
         });
         this.formContacto.reset();
-
+        this._utilService.cargando = false;
       }
       else {
         Swal.fire({
@@ -56,6 +61,8 @@ export class HomeComponent implements OnInit {
           text: 'Favor de ingresar todos los campos',
           timer: 1500
         });
+        this._utilService.cargando = false;
+
       }
     },
       err => {
