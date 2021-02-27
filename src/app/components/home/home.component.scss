@@ -424,7 +424,7 @@ box-shadow: 10px 10px 31px -12px rgba(0,0,0,0.75);
     position: relative;
     background-image: url(/../assets/images/fondo-services.jpg);
     width: 100%;
-    height: 70px;
+    height: 150px;
     /* object-fit: cover; */
     background-size: cover;
     background-attachment: fixed;
@@ -443,7 +443,7 @@ a:hover{
     color: var(--color-primary);
 }
 
-
+// botones 
 .button-primary-normal-home{
     background-color: #A758AE;
     color: #fff;
@@ -717,7 +717,7 @@ a:hover{
 /* inputs  */
 .inputs{
     background-color: transparent;
-    color: #fff;
+    color: var(--color-black);
     border-radius: 20px;
 }
  
@@ -732,6 +732,75 @@ a:hover{
 }
 
 
+
+
+// temas
+.tema-dark {
+  background-color: var(--color-black);
+  transition: 0.8s;
+
+ 
+  // seccion sobre mi 
+  .seccion .color-text-secondary{
+    color: rgb(218, 218, 218);
+    transition: 0.8s;
+
+  }
+  .color-white-fondo{
+    background-color: var(--color-black);
+    color: #fff;
+    transition: 0.8s;
+
+    a{
+      color: rgb(212, 212, 212);
+      transition: 0.8s;
+
+    }
+  }
+  // seccion home 
+  .portada .title-primary, .title-secondary, .color-text-secondary{
+    color: #fff;
+    transition: 0.8s;
+  }
+
+  .container-cards .card1{
+    background-color: var(--color-black);
+    color: rgb(218, 218, 218);
+    transition: 0.8s;
+    &:hover{
+      box-shadow: #A758AE;
+
+    -webkit-box-shadow: 10px 10px 31px -12px #A758AE;
+    -moz-box-shadow: 10px 10px 31px -12px #A758AE;
+    box-shadow: 10px 10px 31px -12px #A758AE;
+    }
+  }
+
+  .color-text{
+    color: rgb(218, 218, 218);
+    transition: 0.8s;
+  }
+  .inputs{
+    color: var(--color-white);
+  }
+  .color-black{
+    color: rgb(218, 218, 218);
+  }
+
+
+
+  
+}
+
+.tema-light{
+    background-color: var(--color-white);
+    transition: 0.8s;
+  }
+
+
+
+
+// media 
 @media (max-width: 900px){
     .imagen-perfil-sobremi{
         margin-left: auto;
@@ -792,20 +861,4 @@ a:hover{
 }
 
 
-
-
-// temas
-.tema-dark{
-  background-color: var(--color-black);
-  transition: 0.5s;
-
-  .seccion .color-text-secondary{
-    color: #fff;
-  }
-}
-
-.tema-light{
-    background-color: var(--color-white);
-    transition: 0.5s;
-}
 
