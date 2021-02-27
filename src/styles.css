@@ -2,7 +2,7 @@
 /* Estilos globales  */
 :root{
     /* colores  */
-    --color-black: #12242B;
+    --color-black: #001F27;
     --color-white: #ffff;
     --color-primary: #A758AE;
     --color-secondary: #786EC1;
@@ -50,6 +50,11 @@ body::-webkit-scrollbar-thumb{
 
 /* colores  */
 .color-black{
+    /* background-color: var(--color-black); */
+    color: var(--color-black);
+}
+
+.color-black-footer{
     background-color: var(--color-black);
 }
 
