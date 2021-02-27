@@ -136,6 +136,20 @@
     font-size: 14px;
 }
 
+.imagen-forma-acerca-derecha{
+    position: absolute;
+    top: 20%;
+    right: 0px;
+    width: 10%;
+    opacity: .1;
+}
+.imagen-forma-acerca-izquierda{
+    position: absolute;
+    top: 70%;
+    left: 0px;
+    width: 10%;
+    opacity: .1;
+}
 
 /* servicios  */
 .algo {
@@ -446,6 +460,9 @@ a:hover{
  
 .render {
     position: relative;
+    background-color: #A758AE;
+    border-radius: 8px;
+    padding: 5px;
     z-index: 30;
     top: 10%;
     cursor: default;
