@@ -177,7 +177,7 @@ body::-webkit-scrollbar-thumb{
 .btn-subir{
     z-index: 1000;
     position: fixed;
-    top: 89%;
+    top: 85%;
     right: 0;
     margin: 10px;
     border-radius: 50%;
