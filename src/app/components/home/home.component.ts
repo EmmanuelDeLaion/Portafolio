@@ -17,18 +17,22 @@ import { UtilsService } from '../../services/utils.service'
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  // form contacto 
   formContacto: FormGroup;
   private validCorreo = /\S+@\S+\.\S+/;
- 
+
+  // tema 
+  temaAlmacenado: string = localStorage.getItem('color-tema');
+
   constructor(
     private formBuilder: FormBuilder,
     public _MessageService: MessageService,
     private _utilService: UtilsService,
   ) {
-     this.formContacto = this.formBuilder.group({
+    this.formContacto = this.formBuilder.group({
       nombre: ['', [Validators.required]],
       correo: ['', [Validators.email, Validators.pattern(this.validCorreo)]],
       numero: ['', [Validators.required]],
@@ -38,6 +42,16 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     AOS.init();
+  }
+
+  escogerTema() {
+    if (this.temaAlmacenado === 'tema-dark') {
+      localStorage.setItem('color-tema', 'tema-light');
+      this.temaAlmacenado = localStorage.getItem('color-tema');
+    } else {
+      localStorage.setItem('color-tema', 'tema-dark');
+      this.temaAlmacenado = localStorage.getItem('color-tema');
+    }
   }
 
 
