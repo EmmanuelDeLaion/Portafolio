@@ -117,11 +117,24 @@
 
 /* sobre mi  */
 .imagen-perfil-sobremi{
-    width: 100%;
+    display: flex;
+    width: 60%;
+    margin-left: auto;
     object-fit: cover;
     border-radius: 10px;
 }
 
+.btn-cv{
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.text-sobremi{
+    font-size: 14px;
+}
 
 
 /* servicios  */
@@ -162,7 +175,7 @@
   display: block;
   position: relative;
   max-width: 262px;
-  background-color: #f2f8f9;
+  background-color: #ffffff;
   border-radius: 4px;
   padding: 32px 24px;
   margin: 12px;
@@ -170,6 +183,7 @@
   z-index: 0;
   overflow: hidden;
   border: 1px solid #A758AE;
+  cursor: default;
 }
   .card1:before {
     content: "";
@@ -194,9 +208,14 @@
 .card1:hover {
     transition: all 0.3s ease-out;
     color: rgba(255, 255, 255, 0.8);
-
     transition: all 0.3s ease-out;
     color: #ffffff;
+    box-shadow: #A758AE;
+
+    -webkit-box-shadow: 10px 10px 31px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 31px -12px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 31px -12px rgba(0,0,0,0.75);
+ 
 }
 
 .img-services{
@@ -427,6 +446,7 @@ a:hover{
  
 .render {
     position: relative;
+    z-index: 30;
     top: 10%;
     cursor: default;
     align-self: center;
@@ -499,7 +519,7 @@ a:hover{
     color: #fff;
     border-radius: 20px;
 }
-
+ 
 
 .navbar-toggler{
     color: #fff;
@@ -509,11 +529,27 @@ a:hover{
 .navbar-toggler-icon{
     color: #fff;
 }
- 
+
+
+@media (max-width: 900px){
+    .imagen-perfil-sobremi{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text-sobremi{
+        padding: 0 30px 0 30px;
+        text-align: center;
+        font-size: 12px;
+    }
+}
 
 @media (max-width: 600px){
     .render{
         font-size: 50px;
+    }
+    .imagen-perfil-sobremi{
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
@@ -534,7 +570,7 @@ a:hover{
     .titulo-experiencia-academica::before{
         font-size: 30px;
     }
-
+  
     
 }
 
@@ -543,7 +579,13 @@ a:hover{
     .btn-conoceme,
     .btn-mi-trabajo
     {
-        width: 100%;
-        margin: 0;
+        width: 70%;
+        margin: auto;
+    }
+}
+
+@media ( max-width: 580px){
+    .text-presentacion{
+        font-size: 14px;
     }
 }

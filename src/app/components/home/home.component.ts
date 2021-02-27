@@ -16,7 +16,6 @@ import * as AOS from 'aos';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
   formContacto: FormGroup;
 
   constructor(
