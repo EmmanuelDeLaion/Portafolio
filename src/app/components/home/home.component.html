@@ -1,603 +1,649 @@
-<nav class="navbar navbar-expand-lg fixed-top color-white-fondo  ">
-    <div class="container-fluid">
-        <a class="navbar-brand" target="_blank" href="http://tecdevsmx.com/">Tec<span
-                class="color-primary">Devs</span></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <!-- <span class="navbar-toggler-icon"></span> -->
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sobremi">Conóceme</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#servicios">Servicios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#experiencia">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#habilidades">Habilidades</a>
-                </li>
+<div class="{{temaAlmacenado}}">
+    <nav class="navbar navbar-expand-lg fixed-top color-white-fondo ">
+        <div class="container-fluid">
+            <a class="navbar-brand" target="_blank" href="http://tecdevsmx.com/">Tec<span
+                    class="color-primary">Devs</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <span class="navbar-toggler-icon"></span> -->
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobremi">Conóceme</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
 
-                <li class="nav-item">
-                    <a class="nav-link" href="#contacto">Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
 
+                </ul>
 
-
-<!-- seccion home  -->
-<section class="portada" id="home">
-    <div class="container">
-        <div class="col-8 col-lg-6 col-xl-6  text-home-portada">
-            <h4 class="title-secondary color-text-secondary">Hola, me llamo</h4>
-            <h1 class="color-primary title-primary">Emmanuel De León</h1>
-            <p class="color-text-secondary text-presentacion"><span class="color-primary">Diseñador </span> y <span
-                    class="color-primary">
-                    desarrollador</span> FrontEnd de aplicaciones Web, Mobile y Desktop</p>
-            <div class="">
-                <a class="social-media" target="_blank"
-                    href="https://www.linkedin.com/in/jesus-emmanuel-de-leon-lerma-0903071b7/">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a class="social-media" target="_blank" href="https://www.instagram.com/emmanueldelaion/">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a class="social-media" target="_blank" href="https://www.facebook.com/jesusemmanuel.lerma/">
-                    <i class="fab fa-facebook"></i>
-                </a>
-                <a class="social-media" target="_blank" href="https://github.com/EmmanuelDeLaion">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a class="social-media" target="_blank" href="https://twitter.com/ElMonoDl">
-                    <i class="fab fa-twitter"></i>
-                </a>
+                <form class="d-flex">
+                    <div class="toggleWrapper">
+                        <input (click)="escogerTema()" type="checkbox" class="dn" id="dn" />
+                        <label for="dn" class="toggle">
+                            <span class="toggle__handler">
+                                <span class="crater crater--1"></span>
+                                <span class="crater crater--2"></span>
+                                <span class="crater crater--3"></span>
+                            </span>
+                            <span class="star star--1"></span>
+                            <span class="star star--2"></span>
+                            <span class="star star--3"></span>
+                            <span class="star star--4"></span>
+                            <span class="star star--5"></span>
+                            <span class="star star--6"></span>
+                        </label>
+                    </div>
+                </form>
             </div>
-            <a href="#sobremi" class="btn btn-edit button-primary-normal-home btn-conoceme">Conóceme </a>
-            <a href="#experiencia" class="btn btn-edit button-primary-outline-home btn-mi-trabajo m-2 ">Ver mi trabajo
-            </a>
         </div>
-    </div>
-</section>
+    </nav>
 
 
-<button onclick="location.href='#home'" class="btn-subir"><i class="fas fa-arrow-circle-up"></i> </button>
 
-
-<!-- seccion sobre mi  -->
-<section class="seccion position-relative" id="sobremi">
-    <img class="imagen-forma-seccion" src="assets/images/forma2.png" alt="">
-    <div class="container">
-        <div class="  row ">
-            <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <div data-aos="fade-right">
-                    <img class="imagen-perfil-sobremi" src="assets/images/imagen-perfil.png" alt="Imagen de perfil">
+    <!-- seccion home  -->
+    <section class="portada" id="home">
+        <div class="container">
+            <div class="col-8 col-lg-6 col-xl-6  text-home-portada">
+                <h4 class="title-secondary color-text-secondary">Hola, me llamo</h4>
+                <h1 class="color-primary title-primary">Emmanuel De León</h1>
+                <p class="color-text-secondary text-presentacion"><span class="color-primary">Diseñador </span> y <span
+                        class="color-primary">
+                        desarrollador</span> FrontEnd de aplicaciones Web, Mobile y Desktop</p>
+                <div class="">
+                    <a class="social-media" target="_blank"
+                        href="https://www.linkedin.com/in/jesus-emmanuel-de-leon-lerma-0903071b7/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a class="social-media" target="_blank" href="https://www.instagram.com/emmanueldelaion/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="social-media" target="_blank" href="https://www.facebook.com/jesusemmanuel.lerma/">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a class="social-media" target="_blank" href="https://github.com/EmmanuelDeLaion">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="social-media" target="_blank" href="https://twitter.com/ElMonoDl">
+                        <i class="fab fa-twitter"></i>
+                    </a>
                 </div>
+                <a href="#sobremi" class="btn btn-edit button-primary-normal-home btn-conoceme">Conóceme </a>
+                <a href="#experiencia" class="btn btn-edit button-primary-outline-home btn-mi-trabajo m-2 ">Ver mi
+                    trabajo
+                </a>
+
 
             </div>
-            <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 position-relative">
+        </div>
+    </section>
+
+
+    <button onclick="location.href='#home'" class="btn-subir"><i class="fas fa-arrow-circle-up"></i> </button>
+
+
+    <!-- seccion sobre mi  -->
+    <section class="seccion position-relative" id="sobremi">
+        <img class="imagen-forma-seccion" src="assets/images/forma2.png" alt="">
+        <div class="container">
+            <div class="  row ">
+                <div class="col-12 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                    <div data-aos="fade-right">
+                        <img class="imagen-perfil-sobremi" src="assets/images/imagen-perfil.png" alt="Imagen de perfil">
+                    </div>
+
+                </div>
+                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 position-relative">
+                    <div class="container">
+                        <div data-aos="fade-down">
+                            <div class="textos-a">
+                                <h5 class="render color-primary-fondo">Sobre mi</h5>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div data-aos="fade-up">
+                        <p class="color-text-secondary text-sobremi">Mi nombre es Emmanuel y me dedico al diseño y
+                            desarrollo en el área de FrontEnd de aplicaciones web, mobile y desktop utilizando
+                            diferentes
+                            tecnologías. Tengo experiencia en proyectos académicos, experiencia laboral en proyectos de
+                            instituciones externas a la universidad, y proyectos personales. Me gusta trabajar en
+                            equipo.
+                        </p>
+                        <button href="#" class="btn btn-edit button-primary-outline-home btn-cv">Ver CV </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="seccion-services position-relative" id="servicios">
+        <img class="imagen-forma-acerca-derecha" src="assets/images/forma-puntos.png" alt="">
+        <img class="imagen-forma-acerca-izquierda" src="assets/images/forma-puntos.png" alt="">
+
+        <div class="container">
+            <div class="col-12">
+                <div data-aos="fade-up">
+                    <div class="textos-a">
+                        <h5 class="render">Servicios</h5>
+                    </div>
+                </div>
+            </div>
+            <div data-aos="fade-up">
+                <div class="container-cards">
+                    <a class="card1 card-1">
+                        <h3 class="text-center">Diseño UI/UX</h3>
+                        <img class="img-services" src="../../assets/images/diseñar.png" alt="Diseño UI/UX">
+                        <p class="small text-center">Diseño de aplicaciones mobiles y paginas web con buena experiencia
+                            de
+                            usuario</p>
+                        <div class="go-corner">
+                            <div class="go-arrow">
+                                <i class="fas fa-arrow-alt-circle-down"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="card1 card-2">
+                        <h3 class="text-center">Desarrollo Web</h3>
+                        <img class="img-services" src="../../assets/images/desarrollar.png" alt="Desarrollo Web">
+                        <p class="small text-center">Desarrollo FrontEnd en paginas y aplicaciones Web</p>
+                        <div class="go-corner">
+                            <div class="go-arrow">
+                                <i class="fas fa-arrow-alt-circle-down"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="card1 card-3">
+                        <h3 class="text-center">Desarrollo Mobile</h3>
+                        <img class="img-services" src="../../assets/images/mobile.png" alt="Desarrollo Mobile">
+                        <p class="small text-center">Desarrollo FrontEnd de interfaces para aplicaciones mobiles</p>
+                        <div class="go-corner">
+                            <div class="go-arrow">
+                                <i class="fas fa-arrow-alt-circle-down"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="card1 card-4">
+                        <h3 class="text-center">Desarrollo Desktop</h3>
+                        <img class="img-services" src="../../assets/images/desktop.png" alt="Desarrollo Desktop">
+                        <p class="small text-center">Desarrollo FrontEnd en sistemas y aplicaciones de escritorio</p>
+                        <div class="go-corner">
+                            <div class="go-arrow">
+                                <i class="fas fa-arrow-alt-circle-down"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <!-- proyectos realizados  -->
+    <section class="seccion-e position-relative" id="experiencia">
+        <div class="container">
+            <div class="col-12">
+                <div data-aos="fade-up">
+                    <div class="textos-a">
+                        <h5 class="render color-primary-fondo">Experiencia</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div data-aos="fade-up">
+            <div class="container-proyects">
                 <div class="container">
-                    <div data-aos="fade-down">
-                        <div class="textos-a">
-                            <h5 class="render color-primary-fondo">Sobre mi</h5>
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="color-white titulo-experiencia position-relative">Experiencia Laboral</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div data-aos="fade-up">
+                <div class="row">
+                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="container-proyects-list mt-5 mb-5">
+                            <div class="container">
+
+                                <div class="row text-center">
+                                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <h3 class="color-text titulo-proyect-cotacyt position-relative">COTACYT</h3>
+                                        <p class="color-text text-sm">Plataforma para la evaluación estatal del concurso
+                                            de
+                                            ciencia y
+                                            tecnológia en
+                                            el estado de tamaulipas.</p>
+                                        <h4 class="badge etiqueta-proyect">HTML</h4>
+                                        <h4 class="badge etiqueta-proyect">CSS</h4>
+                                        <h4 class="badge etiqueta-proyect">Bootstrap</h4>
+                                        <h4 class="badge etiqueta-proyect">Angular</h4>
+                                        <h4 class="badge etiqueta-proyect">TypeScript</h4>
+                                        <h4 class="badge etiqueta-proyect">PHP</h4>
+                                        <h4 class="badge etiqueta-proyect">MySql</h4>
+                                        <h4 class="badge etiqueta-proyect">Slim</h4>
+                                    </div>
+                                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <img class="imagen-seccion-proyecto" src="assets/images/cotacyt.png"
+                                            alt="Proyecto COTACYT">
+                                        <div class="">
+                                            <a class="social-media" target="_blank"
+                                                href="https://github.com/EmmanuelDeLaion"><i
+                                                    class="fab fa-github"></i></a>
+
+                                            <a class="social-media" target="_blank"
+                                                href="https://github.com/EmmanuelDeLaion"><i
+                                                    class="fas fa-globe"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="container-proyects-list mt-5 mb-5">
+                            <div class="container">
+                                <div class="row text-center">
+                                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <h3 class="color-text titulo-proyect-plataforma position-relative">Plataforma
+                                            Premio
+                                            Estatal 2020</h3>
+                                        <p class="color-text text-sm">Plataforma para la evaluación de proyectos en el
+                                            concurso
+                                            de
+                                            investigadores "El Gran Premio 2020".</p>
+                                        <h4 class="badge etiqueta-proyect">HTML</h4>
+                                        <h4 class="badge etiqueta-proyect">CSS</h4>
+                                        <h4 class="badge etiqueta-proyect">Bootstrap</h4>
+                                        <h4 class="badge etiqueta-proyect">Angular</h4>
+                                        <h4 class="badge etiqueta-proyect">TypeScript</h4>
+                                        <h4 class="badge etiqueta-proyect">PHP</h4>
+                                        <h4 class="badge etiqueta-proyect">MySql</h4>
+                                        <h4 class="badge etiqueta-proyect">Slim</h4>
+                                    </div>
+                                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <img class="imagen-seccion-proyecto" src="assets/images/cotacyt.png"
+                                            alt="Proyecto COTACYT">
+                                        <div class="">
+                                            <a class="social-media" target="_blank"
+                                                href="https://github.com/EmmanuelDeLaion"><i
+                                                    class="fab fa-github"></i></a>
+
+                                            <a class="social-media" target="_blank"
+                                                href="https://github.com/EmmanuelDeLaion"><i
+                                                    class="fas fa-globe"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div data-aos="fade-up">
+            <div class="container-proyects mb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="color-white titulo-experiencia-academica position-relative">Experiencia Académica
+                            </h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img class="imagen-forma-proyect" src="assets/images/forma-puntos.png" alt="">
+        <div class="container position-relative">
+
+            <div data-aos="fade-up">
+                <div class="justify-content-center row">
+                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="container-proyects-list mt-2 mb-5">
+                            <div class="container">
+                                <div class="row text-center">
+                                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <h3 class="color-text titulo-proyect-congreso position-relative">Congreso ITSM
+                                            2020
+                                        </h3>
+                                        <p class="color-text text-sm">Desarrollo de pagina web del CongresoITSM 2020
+                                            dedicada a
+                                            registrarse y mostrar información sobre los conferencistas</p>
+                                        <h4 class="badge etiqueta-proyect">HTML</h4>
+                                        <h4 class="badge etiqueta-proyect">CSS</h4>
+                                        <h4 class="badge etiqueta-proyect">Bootstrap</h4>
+                                        <h4 class="badge etiqueta-proyect">Angular</h4>
+                                        <h4 class="badge etiqueta-proyect">TypeScript</h4>
+                                        <h4 class="badge etiqueta-proyect">PHP</h4>
+                                        <h4 class="badge etiqueta-proyect">MySql</h4>
+                                    </div>
+                                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <img class="imagen-seccion-proyecto" src="assets/images/congreso.jpg"
+                                            alt="Proyecto Congreso ITSM 2020">
+                                        <div class="">
+                                            <a class="social-media" target="_blank"
+                                                href="https://github.com/EmmanuelDeLaion"><i
+                                                    class="fab fa-github"></i></a>
+
+                                            <a class="social-media" target="_blank"
+                                                href="http://tecmante.edu.mx/congreso/"><i class="fas fa-globe"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
+
+                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="container-proyects-list mt-2 mb-5">
+                            <div class="container">
+                                <div class="row text-center">
+                                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <h3 class="color-text titulo-proyect-kabum position-relative">KABUM</h3>
+                                        <p class="color-text text-sm">Diseño y maquetación de Kabum, Web App clone de
+                                            Kahoot,
+                                            que funciona de manera local con el uso de sockets y conexiones locales</p>
+                                        <h4 class="badge etiqueta-proyect">HTML</h4>
+                                        <h4 class="badge etiqueta-proyect">CSS</h4>
+                                        <h4 class="badge etiqueta-proyect">React</h4>
+                                        <h4 class="badge etiqueta-proyect">Node JS</h4>
+                                        <h4 class="badge etiqueta-proyect">Socket.io</h4>
+                                        <h4 class="badge etiqueta-proyect">JavaScript</h4>
+                                    </div>
+                                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <img class="imagen-seccion-proyecto" src="assets/images/kabum.jpg"
+                                            alt="Proyecto COTACYT">
+                                        <div class="">
+                                            <a class="social-media" target="_blank"
+                                                href="https://github.com/EmmanuelDeLaion"><i
+                                                    class="fab fa-github"></i></a>
+
+                                            <a class="social-media" target="_blank"
+                                                href="http://kabum.tecdevsmx.com/"><i class="fas fa-globe"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="container-proyects-list mt-2 mb-5">
+                            <div class="container">
+                                <div class="row text-center">
+                                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <h3 class="color-text titulo-proyect-next position-relative">NextPhoto</h3>
+                                        <p class="color-text text-sm">Desarrollo de pagina web para la empresa NextPhoto
+                                            dedicada a mostrar y solicitar paquetes de fotografias</p>
+                                        <h4 class="badge etiqueta-proyect">HTML</h4>
+                                        <h4 class="badge etiqueta-proyect">CSS</h4>
+                                        <h4 class="badge etiqueta-proyect">Bootstrap</h4>
+                                        <h4 class="badge etiqueta-proyect">PHP</h4>
+                                        <h4 class="badge etiqueta-proyect">JavaScript</h4>
+                                    </div>
+                                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <img class="imagen-seccion-proyecto" src="assets/images/nextphoto.jpg"
+                                            alt="Proyecto COTACYT">
+                                        <div class="">
+                                            <a class="social-media" target="_blank"
+                                                href="https://github.com/EmmanuelDeLaion"><i
+                                                    class="fab fa-github"></i></a>
+
+                                            <a class="social-media" target="_blank"
+                                                href="http://nextphoto.tecdevsmx.com/"><i class="fas fa-globe"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="container-proyects-list mt-2 mb-5">
+                            <div class="container">
+                                <div class="row text-center">
+                                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <h3 class="color-text titulo-proyect-borrados position-relative">Borrado´s
+                                            Crochet
+                                        </h3>
+                                        <p class="color-text text-sm">Desarrollo de pagina web para la empresa Borrado´s
+                                            Crochet
+                                            dedicada a mostrar y
+                                            solicitar productos</p>
+                                        <h4 class="badge etiqueta-proyect">HTML</h4>
+                                        <h4 class="badge etiqueta-proyect">CSS</h4>
+                                        <h4 class="badge etiqueta-proyect">Bootstrap</h4>
+                                        <h4 class="badge etiqueta-proyect">PHP</h4>
+                                        <h4 class="badge etiqueta-proyect">JavaScript</h4>
+                                    </div>
+                                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <img class="imagen-seccion-proyecto" src="assets/images/borrados.jpg"
+                                            alt="Proyecto COTACYT">
+                                        <div class="">
+                                            <a class="social-media" target="_blank"
+                                                href="https://github.com/EmmanuelDeLaion"><i
+                                                    class="fab fa-github"></i></a>
+
+                                            <a class="social-media" target="_blank"
+                                                href="http://borrados-crochet.tecdevsmx.com/"><i
+                                                    class="fas fa-globe"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                        <div class="container-proyects-list mt-2 mb-5">
+                            <div class="container">
+                                <div class="row text-center">
+                                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <h3 class="color-text titulo-proyect-kfood position-relative">KFood</h3>
+                                        <p class="color-text text-sm">Diseño y desarrollo FrontEnd de la aplicación para
+                                            realizar pedidos de comida en el ITSM</p>
+                                        <h4 class="badge etiqueta-proyect">Flutter</h4>
+                                        <h4 class="badge etiqueta-proyect">Dart</h4>
+
+                                    </div>
+                                    <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                        <img class="imagen-seccion-proyecto" src="assets/images/kfood.jpg"
+                                            alt="Proyecto COTACYT">
+                                        <div class="">
+                                            <a class="social-media" target="_blank"
+                                                href="https://github.com/RaulHdzDev/kfood"><i
+                                                    class="fab fa-github"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="text-center" target="_blanck"
+                        href="https://github.com/EmmanuelDeLaion?tab=repositories">Más
+                        proyectos en github <span> <i class="fas fa-arrow-circle-right"></i> </span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="seccion position-relative mb-5" id="habilidades">
+        <div class="container">
+            <div class="col-12">
+                <div data-aos="fade-up">
+                    <div class="textos-a">
+                        <h5 class="render color-primary-fondo">Tecnologias</h5>
+                    </div>
                 </div>
                 <div data-aos="fade-up">
-                    <p class="color-text-secondary text-sobremi">Mi nombre es Emmanuel y me dedico al diseño y
-                        desarrollo en el área de FrontEnd de aplicaciones web, mobile y desktop utilizando diferentes
-                        tecnologías. Tengo experiencia en proyectos académicos, experiencia laboral en proyectos de
-                        instituciones externas a la universidad, y proyectos personales. Me gusta trabajar en equipo.
+                    <p class="color-text text-center">Estas son algunas <span class="color-primary"> tecnologías y
+                            lenguajes
+                            de
+                            programación</span> de las que tengo
+                        <span class="color-primary"> experiencia</span>
                     </p>
-                    <button href="#" class="btn btn-edit button-primary-outline-home btn-cv">Ver CV </button>
                 </div>
-
             </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="seccion-services position-relative" id="servicios">
-    <img class="imagen-forma-acerca-derecha" src="assets/images/forma-puntos.png" alt="">
-    <img class="imagen-forma-acerca-izquierda" src="assets/images/forma-puntos.png" alt="">
-
-    <div class="container">
-        <div class="col-12">
             <div data-aos="fade-up">
-                <div class="textos-a">
-                    <h5 class="render">Servicios</h5>
+                <div class="row justify-content-center">
+                    <div class="imagen-logos-tecnologias">
+                        <img class="logos" src="assets/images/tecnologias/html.png" alt="html">
+                    </div>
+                    <div class="imagen-logos-tecnologias">
+                        <img class="logos" src="assets/images/tecnologias/css.png" alt="css">
+                    </div>
+                    <div class="imagen-logos-tecnologias">
+                        <img class="logos" src="assets/images/tecnologias/js.png" alt="JavaScript">
+                    </div>
+                    <div class="imagen-logos-tecnologias">
+                        <img class="logos" src="assets/images/tecnologias/ts.png" alt="TypeScript">
+                    </div>
+                    <div class="imagen-logos-tecnologias">
+                        <img class="logos" src="assets/images/tecnologias/bootstrapp.png" alt="bootstrap">
+                    </div>
+                    <div class="imagen-logos-tecnologias">
+                        <img class="logos" src="assets/images/tecnologias/angular.png" alt="angular">
+                    </div>
+                    <div class="imagen-logos-tecnologias">
+                        <img class="logos" src="assets/images/tecnologias/reactjs.png" alt="reactjs">
+                    </div>
+                    <div class="imagen-logos-tecnologias">
+                        <img class="logos" src="assets/images/tecnologias/dart.png" alt="dart">
+                    </div>
+                    <div class="imagen-logos-tecnologias">
+                        <img class="logos" src="assets/images/tecnologias/flutter.png" alt="flutter">
+                    </div>
+                    <div class="imagen-logos-tecnologias">
+                        <img class="logos" src="assets/images/tecnologias/java.png" alt="java">
+                    </div>
+                    <div class="imagen-logos-tecnologias">
+                        <img class="logos" src="assets/images/tecnologias/csharp.png" alt="csharp">
+                    </div>
+                    <div class="imagen-logos-tecnologias">
+                        <img class="logos" src="assets/images/tecnologias/ps.png" alt="ps">
+                    </div>
+                    <div class="imagen-logos-tecnologias">
+                        <img class="logos" src="assets/images/tecnologias/xd.png" alt="xd">
+                    </div>
                 </div>
             </div>
         </div>
-        <div data-aos="fade-up">
-            <div class="container-cards">
-                <a class="card1 card-1">
-                    <h3 class="text-center">Diseño UI/UX</h3>
-                    <img class="img-services" src="../../assets/images/diseñar.png" alt="Diseño UI/UX">
-                    <p class="small text-center">Diseño de aplicaciones mobiles y paginas web con buena experiencia de
-                        usuario</p>
-                    <div class="go-corner">
-                        <div class="go-arrow">
-                            <i class="fas fa-arrow-alt-circle-down"></i>
-                        </div>
-                    </div>
-                </a>
-
-                <a class="card1 card-2">
-                    <h3 class="text-center">Desarrollo Web</h3>
-                    <img class="img-services" src="../../assets/images/desarrollar.png" alt="Desarrollo Web">
-                    <p class="small text-center">Desarrollo FrontEnd en paginas y aplicaciones Web</p>
-                    <div class="go-corner">
-                        <div class="go-arrow">
-                            <i class="fas fa-arrow-alt-circle-down"></i>
-                        </div>
-                    </div>
-                </a>
-
-                <a class="card1 card-3">
-                    <h3 class="text-center">Desarrollo Mobile</h3>
-                    <img class="img-services" src="../../assets/images/mobile.png" alt="Desarrollo Mobile">
-                    <p class="small text-center">Desarrollo FrontEnd de interfaces para aplicaciones mobiles</p>
-                    <div class="go-corner">
-                        <div class="go-arrow">
-                            <i class="fas fa-arrow-alt-circle-down"></i>
-                        </div>
-                    </div>
-                </a>
-
-                <a class="card1 card-4">
-                    <h3 class="text-center">Desarrollo Desktop</h3>
-                    <img class="img-services" src="../../assets/images/desktop.png" alt="Desarrollo Desktop">
-                    <p class="small text-center">Desarrollo FrontEnd en sistemas y aplicaciones de escritorio</p>
-                    <div class="go-corner">
-                        <div class="go-arrow">
-                            <i class="fas fa-arrow-alt-circle-down"></i>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
+    </section>
 
 
-    </div>
-</section>
+    <div class="fondo-servicios">
+        <section class="seccion">
 
-
-
-
-<!-- proyectos realizados  -->
-<section class="seccion-e position-relative" id="experiencia">
-    <div class="container">
-        <div class="col-12">
-            <div data-aos="fade-up">
-                <div class="textos-a">
-                    <h5 class="render color-primary-fondo">Experiencia</h5>
-                </div>
-            </div>
-        </div>
+        </section>
     </div>
 
-    <div data-aos="fade-up">
-        <div class="container-proyects">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="color-white titulo-experiencia position-relative">Experiencia Laboral</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="container">
-        <div data-aos="fade-up">
-            <div class="row">
-                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="container-proyects-list mt-5 mb-5">
-                        <div class="container">
+    <section class="color-black-fondo seccion-contactame position-relative" id="contacto">
+        <img class="imagen-forma-footer" src="assets/images/forma1.png" alt="">
+        <img class="imagen-forma-footer-derecha" src="assets/images/forma3.png" alt="">
 
-                            <div class="row text-center">
-                                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <h3 class="color-text titulo-proyect-cotacyt position-relative">COTACYT</h3>
-                                    <p class="color-text text-sm">Plataforma para la evaluación estatal del concurso de
-                                        ciencia y
-                                        tecnológia en
-                                        el estado de tamaulipas.</p>
-                                    <h4 class="badge etiqueta-proyect">HTML</h4>
-                                    <h4 class="badge etiqueta-proyect">CSS</h4>
-                                    <h4 class="badge etiqueta-proyect">Bootstrap</h4>
-                                    <h4 class="badge etiqueta-proyect">Angular</h4>
-                                    <h4 class="badge etiqueta-proyect">TypeScript</h4>
-                                    <h4 class="badge etiqueta-proyect">PHP</h4>
-                                    <h4 class="badge etiqueta-proyect">MySql</h4>
-                                    <h4 class="badge etiqueta-proyect">Slim</h4>
-                                </div>
-                                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <img class="imagen-seccion-proyecto" src="assets/images/cotacyt.png"
-                                        alt="Proyecto COTACYT">
-                                    <div class="">
-                                        <a class="social-media" target="_blank"
-                                            href="https://github.com/EmmanuelDeLaion"><i class="fab fa-github"></i></a>
+        <div class="container">
 
-                                        <a class="social-media" target="_blank"
-                                            href="https://github.com/EmmanuelDeLaion"><i class="fas fa-globe"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="container-proyects-list mt-5 mb-5">
-                        <div class="container">
-                            <div class="row text-center">
-                                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <h3 class="color-text titulo-proyect-plataforma position-relative">Plataforma Premio
-                                        Estatal 2020</h3>
-                                    <p class="color-text text-sm">Plataforma para la evaluación de proyectos en el
-                                        concurso
-                                        de
-                                        investigadores "El Gran Premio 2020".</p>
-                                    <h4 class="badge etiqueta-proyect">HTML</h4>
-                                    <h4 class="badge etiqueta-proyect">CSS</h4>
-                                    <h4 class="badge etiqueta-proyect">Bootstrap</h4>
-                                    <h4 class="badge etiqueta-proyect">Angular</h4>
-                                    <h4 class="badge etiqueta-proyect">TypeScript</h4>
-                                    <h4 class="badge etiqueta-proyect">PHP</h4>
-                                    <h4 class="badge etiqueta-proyect">MySql</h4>
-                                    <h4 class="badge etiqueta-proyect">Slim</h4>
-                                </div>
-                                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <img class="imagen-seccion-proyecto" src="assets/images/cotacyt.png"
-                                        alt="Proyecto COTACYT">
-                                    <div class="">
-                                        <a class="social-media" target="_blank"
-                                            href="https://github.com/EmmanuelDeLaion"><i class="fab fa-github"></i></a>
-
-                                        <a class="social-media" target="_blank"
-                                            href="https://github.com/EmmanuelDeLaion"><i class="fas fa-globe"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-    <div data-aos="fade-up">
-        <div class="container-proyects mb-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <h1 class="color-white titulo-experiencia-academica position-relative">Experiencia Académica
+            <div class="justify-content-center row ">
+                <div class="col-12 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                    <div data-aos="fade-up">
+                        <h1 class="color-white titulo-experiencia-contactame position-relative text-center">Contáctame
                         </h1>
                     </div>
+                    <div data-aos="fade-up">
+                        <p class="text-center">Para mayor información <span class="color-primary"> contáctame</span>
+                        </p>
+                        <p class="text-sm text-center"> <i class="fas fa-envelope"></i>
+                            deleon.lerma.17163@itsmante.edu.mx
+                        </p>
+                        <p class="text-sm text-center"> <i class="fab fa-whatsapp"></i> +52 (831-254-2410)</p>
+                    </div>
+
+                    <img class="img-contact" src="../../assets/images/contact.svg" alt="">
+                </div>
+                <div class="col-12 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                    <div data-aos="fade-up">
+                        <p class="text-sm">Ingrese sus datos para contactarme</p>
+                        <form [formGroup]="formContacto">
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <input formControlName="nombre" type="text" class="form-control inputs"
+                                        placeholder="Nombre" id="nombre" aria-describedby="emailHelp">
+                                    <label for="nombre">Nombre</label>
+                                </div>
+
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <input formControlName="correo" type="email" class="form-control inputs"
+                                        placeholder="Correo" id="correo_" aria-describedby="emailHelp">
+                                    <label for="correo_">Correo</label>
+
+                                </div>
+
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <input formControlName="numero" type="tel" class="form-control inputs"
+                                        placeholder="teléfono" id="telefono" aria-describedby="telefono">
+                                    <label for="telefono">Teléfono</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <div class="form-floating">
+                                    <textarea formControlName="mensaje" class="form-control inputs"
+                                        placeholder="mensaje" id="mensaje" rows="1" style="height: 100px"></textarea>
+                                    <label for="mensaje">Mensaje</label>
+                                </div>
+                            </div>
+
+
+                            <button [disabled]="formContacto.invalid" (click)="enviarMensaje()" type="button"
+                                class="btn w-100 button-primary-normal mb-5">Enviar
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <img class="imagen-forma-proyect" src="assets/images/forma-puntos.png" alt="">
-    <div class="container position-relative">
-
-        <div data-aos="fade-up">
-            <div class="justify-content-center row">
-                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="container-proyects-list mt-2 mb-5">
-                        <div class="container">
-                            <div class="row text-center">
-                                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <h3 class="color-text titulo-proyect-congreso position-relative">Congreso ITSM 2020
-                                    </h3>
-                                    <p class="color-text text-sm">Desarrollo de pagina web del CongresoITSM 2020
-                                        dedicada a
-                                        registrarse y mostrar información sobre los conferencistas</p>
-                                    <h4 class="badge etiqueta-proyect">HTML</h4>
-                                    <h4 class="badge etiqueta-proyect">CSS</h4>
-                                    <h4 class="badge etiqueta-proyect">Bootstrap</h4>
-                                    <h4 class="badge etiqueta-proyect">Angular</h4>
-                                    <h4 class="badge etiqueta-proyect">TypeScript</h4>
-                                    <h4 class="badge etiqueta-proyect">PHP</h4>
-                                    <h4 class="badge etiqueta-proyect">MySql</h4>
-                                </div>
-                                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <img class="imagen-seccion-proyecto" src="assets/images/congreso.jpg"
-                                        alt="Proyecto Congreso ITSM 2020">
-                                    <div class="">
-                                        <a class="social-media" target="_blank"
-                                            href="https://github.com/EmmanuelDeLaion"><i class="fab fa-github"></i></a>
-
-                                        <a class="social-media" target="_blank"
-                                            href="http://tecmante.edu.mx/congreso/"><i class="fas fa-globe"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="container-proyects-list mt-2 mb-5">
-                        <div class="container">
-                            <div class="row text-center">
-                                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <h3 class="color-text titulo-proyect-kabum position-relative">KABUM</h3>
-                                    <p class="color-text text-sm">Diseño y maquetación de Kabum, Web App clone de
-                                        Kahoot,
-                                        que funciona de manera local con el uso de sockets y conexiones locales</p>
-                                    <h4 class="badge etiqueta-proyect">HTML</h4>
-                                    <h4 class="badge etiqueta-proyect">CSS</h4>
-                                    <h4 class="badge etiqueta-proyect">React</h4>
-                                    <h4 class="badge etiqueta-proyect">Node JS</h4>
-                                    <h4 class="badge etiqueta-proyect">Socket.io</h4>
-                                    <h4 class="badge etiqueta-proyect">JavaScript</h4>
-                                </div>
-                                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <img class="imagen-seccion-proyecto" src="assets/images/kabum.jpg"
-                                        alt="Proyecto COTACYT">
-                                    <div class="">
-                                        <a class="social-media" target="_blank"
-                                            href="https://github.com/EmmanuelDeLaion"><i class="fab fa-github"></i></a>
-
-                                        <a class="social-media" target="_blank" href="http://kabum.tecdevsmx.com/"><i
-                                                class="fas fa-globe"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="container-proyects-list mt-2 mb-5">
-                        <div class="container">
-                            <div class="row text-center">
-                                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <h3 class="color-text titulo-proyect-next position-relative">NextPhoto</h3>
-                                    <p class="color-text text-sm">Desarrollo de pagina web para la empresa NextPhoto
-                                        dedicada a mostrar y solicitar paquetes de fotografias</p>
-                                    <h4 class="badge etiqueta-proyect">HTML</h4>
-                                    <h4 class="badge etiqueta-proyect">CSS</h4>
-                                    <h4 class="badge etiqueta-proyect">Bootstrap</h4>
-                                    <h4 class="badge etiqueta-proyect">PHP</h4>
-                                    <h4 class="badge etiqueta-proyect">JavaScript</h4>
-                                </div>
-                                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <img class="imagen-seccion-proyecto" src="assets/images/nextphoto.jpg"
-                                        alt="Proyecto COTACYT">
-                                    <div class="">
-                                        <a class="social-media" target="_blank"
-                                            href="https://github.com/EmmanuelDeLaion"><i class="fab fa-github"></i></a>
-
-                                        <a class="social-media" target="_blank"
-                                            href="http://nextphoto.tecdevsmx.com/"><i class="fas fa-globe"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="container-proyects-list mt-2 mb-5">
-                        <div class="container">
-                            <div class="row text-center">
-                                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <h3 class="color-text titulo-proyect-borrados position-relative">Borrado´s Crochet
-                                    </h3>
-                                    <p class="color-text text-sm">Desarrollo de pagina web para la empresa Borrado´s
-                                        Crochet
-                                        dedicada a mostrar y
-                                        solicitar productos</p>
-                                    <h4 class="badge etiqueta-proyect">HTML</h4>
-                                    <h4 class="badge etiqueta-proyect">CSS</h4>
-                                    <h4 class="badge etiqueta-proyect">Bootstrap</h4>
-                                    <h4 class="badge etiqueta-proyect">PHP</h4>
-                                    <h4 class="badge etiqueta-proyect">JavaScript</h4>
-                                </div>
-                                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <img class="imagen-seccion-proyecto" src="assets/images/borrados.jpg"
-                                        alt="Proyecto COTACYT">
-                                    <div class="">
-                                        <a class="social-media" target="_blank"
-                                            href="https://github.com/EmmanuelDeLaion"><i class="fab fa-github"></i></a>
-
-                                        <a class="social-media" target="_blank"
-                                            href="http://borrados-crochet.tecdevsmx.com/"><i
-                                                class="fas fa-globe"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                    <div class="container-proyects-list mt-2 mb-5">
-                        <div class="container">
-                            <div class="row text-center">
-                                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <h3 class="color-text titulo-proyect-kfood position-relative">KFood</h3>
-                                    <p class="color-text text-sm">Diseño y desarrollo FrontEnd de la aplicación para
-                                        realizar pedidos de comida en el ITSM</p>
-                                    <h4 class="badge etiqueta-proyect">Flutter</h4>
-                                    <h4 class="badge etiqueta-proyect">Dart</h4>
-
-                                </div>
-                                <div class="col-12 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                                    <img class="imagen-seccion-proyecto" src="assets/images/kfood.jpg"
-                                        alt="Proyecto COTACYT">
-                                    <div class="">
-                                        <a class="social-media" target="_blank"
-                                            href="https://github.com/RaulHdzDev/kfood"><i class="fab fa-github"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <a class="text-center" target="_blanck" href="https://github.com/EmmanuelDeLaion?tab=repositories">Más
-                    proyectos en github <span> <i class="fas fa-arrow-circle-right"></i> </span></a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-<section class="seccion position-relative mb-5" id="habilidades">
-    <div class="container">
-        <div class="col-12">
-            <div data-aos="fade-up">
-                <div class="textos-a">
-                    <h5 class="render color-primary-fondo">Tecnologias</h5>
-                </div>
-            </div>
-            <div data-aos="fade-up">
-                <p class="color-text text-center">Estas son algunas <span class="color-primary"> tecnologías y lenguajes
-                        de
-                        programación</span> de las que tengo
-                    <span class="color-primary"> experiencia</span>
-                </p>
-            </div>
-        </div>
-        <div data-aos="fade-up">
-            <div class="row justify-content-center">
-                <div class="imagen-logos-tecnologias">
-                    <img class="logos" src="assets/images/tecnologias/html.png" alt="html">
-                </div>
-                <div class="imagen-logos-tecnologias">
-                    <img class="logos" src="assets/images/tecnologias/css.png" alt="css">
-                </div>
-                <div class="imagen-logos-tecnologias">
-                    <img class="logos" src="assets/images/tecnologias/js.png" alt="JavaScript">
-                </div>
-                <div class="imagen-logos-tecnologias">
-                    <img class="logos" src="assets/images/tecnologias/ts.png" alt="TypeScript">
-                </div>
-                <div class="imagen-logos-tecnologias">
-                    <img class="logos" src="assets/images/tecnologias/bootstrapp.png" alt="bootstrap">
-                </div>
-                <div class="imagen-logos-tecnologias">
-                    <img class="logos" src="assets/images/tecnologias/angular.png" alt="angular">
-                </div>
-                <div class="imagen-logos-tecnologias">
-                    <img class="logos" src="assets/images/tecnologias/reactjs.png" alt="reactjs">
-                </div>
-                <div class="imagen-logos-tecnologias">
-                    <img class="logos" src="assets/images/tecnologias/dart.png" alt="dart">
-                </div>
-                <div class="imagen-logos-tecnologias">
-                    <img class="logos" src="assets/images/tecnologias/flutter.png" alt="flutter">
-                </div>
-                <div class="imagen-logos-tecnologias">
-                    <img class="logos" src="assets/images/tecnologias/java.png" alt="java">
-                </div>
-                <div class="imagen-logos-tecnologias">
-                    <img class="logos" src="assets/images/tecnologias/csharp.png" alt="csharp">
-                </div>
-                <div class="imagen-logos-tecnologias">
-                    <img class="logos" src="assets/images/tecnologias/ps.png" alt="ps">
-                </div>
-                <div class="imagen-logos-tecnologias">
-                    <img class="logos" src="assets/images/tecnologias/xd.png" alt="xd">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<div class="fondo-servicios">
-    <section class="seccion">
-
     </section>
 </div>
-
-
-<section class="color-black-fondo seccion-contactame position-relative" id="contacto">
-    <img class="imagen-forma-footer" src="assets/images/forma1.png" alt="">
-    <img class="imagen-forma-footer-derecha" src="assets/images/forma3.png" alt="">
-
-    <div class="container">
-
-        <div class="justify-content-center row ">
-            <div class="col-12 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                <div data-aos="fade-up">
-                    <h1 class="color-white titulo-experiencia-contactame position-relative text-center">Contáctame</h1>
-                </div>
-                <div data-aos="fade-up">
-                    <p class="text-center">Para mayor información <span class="color-primary"> contáctame</span> </p>
-                    <p class="text-sm text-center"> <i class="fas fa-envelope"></i> deleon.lerma.17163@itsmante.edu.mx
-                    </p>
-                    <p class="text-sm text-center"> <i class="fab fa-whatsapp"></i> +52 (831-254-2410)</p>
-                </div>
-
-                <img class="img-contact" src="../../assets/images/contact.svg" alt="">
-            </div>
-            <div class="col-12 col-xl-5 col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                <div data-aos="fade-up">
-                    <p class="text-sm">Ingrese sus datos para contactarme</p>
-                    <form [formGroup]="formContacto">
-                        <div class="mb-3">
-                            <div class="form-floating">
-                                <input formControlName="nombre" type="text" class="form-control inputs"
-                                    placeholder="Nombre" id="nombre" aria-describedby="emailHelp">
-                                <label for="nombre">Nombre</label>
-                            </div>
-
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="form-floating">
-                                <input formControlName="correo" type="email" class="form-control inputs"
-                                    placeholder="Correo" id="correo_" aria-describedby="emailHelp">
-                                <label for="correo_">Correo</label>
-
-                            </div>
-
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="form-floating">
-                                <input formControlName="numero" type="tel" class="form-control inputs"
-                                    placeholder="teléfono" id="telefono" aria-describedby="telefono">
-                                <label for="telefono">Teléfono</label>
-                            </div>
-                        </div>
-
-                        <div class="mb-3">
-                            <div class="form-floating">
-                                <textarea formControlName="mensaje" class="form-control inputs" placeholder="mensaje"
-                                    id="mensaje" rows="1" style="height: 100px"></textarea>
-                                <label for="mensaje">Mensaje</label>
-                            </div>
-                        </div>
-
-                       
-                        <button [disabled]="formContacto.invalid" (click)="enviarMensaje()" type="button"
-                            class="btn w-100 button-primary-normal mb-5">Enviar
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
