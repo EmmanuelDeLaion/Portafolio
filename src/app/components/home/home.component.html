@@ -168,7 +168,7 @@
     </div>
 </section>
 
- 
+
 
 
 <!-- proyectos realizados  -->
@@ -553,24 +553,42 @@
                     <p class="text-sm">Ingrese sus datos para contactarme</p>
                     <form [formGroup]="formContacto">
                         <div class="mb-3">
-                            <input formControlName="nombre" type="text" class="form-control inputs" placeholder="Nombre"
-                                id="nombre" aria-describedby="emailHelp">
+                            <div class="form-floating">
+                                <input formControlName="nombre" type="text" class="form-control inputs"
+                                    placeholder="Nombre" id="nombre" aria-describedby="emailHelp">
+                                <label for="nombre">Nombre</label>
+                            </div>
+
                         </div>
 
                         <div class="mb-3">
-                            <input formControlName="correo" type="email" class="form-control inputs"
-                                placeholder="Correo" id="exampleInputEmail1" aria-describedby="emailHelp">
+                            <div class="form-floating">
+                                <input formControlName="correo" type="email" class="form-control inputs"
+                                    placeholder="Correo" id="correo_" aria-describedby="emailHelp">
+                                <label for="correo_">Correo</label>
+
+                            </div>
+
                         </div>
 
                         <div class="mb-3">
-                            <input formControlName="numero" type="tel" class="form-control inputs"
-                                placeholder="teléfono" id="telefono" aria-describedby="telefono">
+                            <div class="form-floating">
+                                <input formControlName="numero" type="tel" class="form-control inputs"
+                                    placeholder="teléfono" id="telefono" aria-describedby="telefono">
+                                <label for="telefono">Teléfono</label>
+                            </div>
+
                         </div>
 
                         <div class="mb-3">
-                            <textarea formControlName="mensaje" class="form-control inputs" placeholder="Mensaje"
-                                id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <div class="form-floating">
+                                <textarea formControlName="mensaje" class="form-control inputs" placeholder="mensaje"
+                                    id="mensaje" rows="1" style="height: 100px"></textarea>
+                                <label for="mensaje">Mensaje</label>
+                            </div>
                         </div>
+
+
                         <button (click)="enviarMensaje()" type="button"
                             class="btn w-100 button-primary-normal mb-5">Enviar
                         </button>
