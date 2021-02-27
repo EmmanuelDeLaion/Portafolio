@@ -42,40 +42,36 @@ export class HomeComponent implements OnInit {
 
   enviarMensaje() {
     this._utilService.cargando = true;
-    this._MessageService.sendMessage(this.formContacto.value).subscribe(res => {
-      console.log(res);
-      if (this.formContacto.value.nombre != "" && this.formContacto.value.correo != "" && this.formContacto.value.numero != "" && this.formContacto.value.mensaje != "") {
-        Swal.fire({
-          icon: 'success',
-          title: 'Enviado',
-          text: 'Tu mensaje se envió correctamente',
-          timer: 1500
-        });
-        this.formContacto.reset();
-        this._utilService.cargando = false;
-      }
-      else {
-        Swal.fire({
-          icon: 'error',
-          title: 'Verifique los campos',
-          text: 'Favor de ingresar todos los campos',
-          timer: 1500
-        });
-        this._utilService.cargando = false;
+    if (this.formContacto.value.nombre != "" && this.formContacto.value.correo != "" && this.formContacto.value.numero != "" && this.formContacto.value.mensaje != "") {
+      this._MessageService.sendMessage(this.formContacto.value).subscribe(
+        res => {
+          Swal.fire({
+            icon: 'success',
+            title: 'Enviado',
+            text: 'Tu mensaje se envió correctamente'
+          }).then(
+            function (value) {
+              location.reload();
+            }
+          );
+          this.formContacto.reset();
+          this._utilService.cargando = false;
+        },
+        err => {
+          console.log(err);
+        }
+      );
 
-      }
-    },
-      err => {
-        console.log(err);
-
-      }
-    );
-
-
-
+    } else {
+      Swal.fire({
+        icon: 'error',
+        title: 'Verifique los campos',
+        text: 'Favor de ingresar todos los campos',
+        timer: 1500
+      });
+      this._utilService.cargando = false;
+    }
   }
-
-
 }
 
 
