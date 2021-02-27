@@ -577,7 +577,6 @@
                                     placeholder="teléfono" id="telefono" aria-describedby="telefono">
                                 <label for="telefono">Teléfono</label>
                             </div>
-
                         </div>
 
                         <div class="mb-3">
@@ -588,8 +587,8 @@
                             </div>
                         </div>
 
-
-                        <button (click)="enviarMensaje()" type="button"
+                       
+                        <button [disabled]="formContacto.invalid" (click)="enviarMensaje()" type="button"
                             class="btn w-100 button-primary-normal mb-5">Enviar
                         </button>
                     </form>

@@ -21,15 +21,16 @@ import { UtilsService } from '../../services/utils.service'
 })
 export class HomeComponent implements OnInit {
   formContacto: FormGroup;
-
+  private validCorreo = /\S+@\S+\.\S+/;
+ 
   constructor(
     private formBuilder: FormBuilder,
     public _MessageService: MessageService,
-    private _utilService: UtilsService
+    private _utilService: UtilsService,
   ) {
-    this.formContacto = this.formBuilder.group({
+     this.formContacto = this.formBuilder.group({
       nombre: ['', [Validators.required]],
-      correo: ['', [Validators.email]],
+      correo: ['', [Validators.email, Validators.pattern(this.validCorreo)]],
       numero: ['', [Validators.required]],
       mensaje: ['', [Validators.required]]
     });

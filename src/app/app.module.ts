@@ -23,7 +23,7 @@ import { MessageService } from './services/message.service';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [
     MessageService
