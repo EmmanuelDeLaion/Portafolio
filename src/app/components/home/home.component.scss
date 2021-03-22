@@ -69,7 +69,7 @@
     box-shadow: 0 2px 6px rgba(0,0,0,.3);
     transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     transform:  rotate(-45deg);
-    
+  
     .crater {
       position: absolute;
       background-color: #E8CDA5;
@@ -77,26 +77,12 @@
       transition: opacity 200ms ease-in-out;
       border-radius: 100%;
     }
-    
-    .crater--1 {
-      top: 5px;
-      left: 6px;
-      width: 4px;
-      height: 4px;
-    }
-    
+
     .crater--2 {
       top: 10px;
       left: 10px;
       width: 6px;
       height: 6px;
-    }
-    
-    .crater--3 {
-      top: 8px;
-      left: 13px;
-      width: 8px;
-      height: 8px;
     }
   }
   
@@ -114,15 +100,7 @@
     width: 30px;
     height: 3px;
   }
-  
-  .star--2 {
-    top: 10px;
-    left: 28px;
-    z-index: 1;
-    width: 30px;
-    height: 3px;
-  }
-  
+   
   .star--3 {
     top: 13px;
     left: 40px;
@@ -146,15 +124,7 @@
     height: 2px;
     transform: translate3d(2px,0,0);
   }
-  
-  .star--5 {
-    top: 20px;
-    left: 17px;
-    z-index: 0;
-    width: 3px;
-    height: 3px;
-    transform: translate3d(2px,0,0);
-  }
+ 
   
   .star--6 {
     top: 22px;
@@ -217,10 +187,6 @@
     }
   }
   
-
-
-
-
 /* social networks  */
 .social-media{
     color: var(--color-primary);
@@ -248,23 +214,18 @@
       left: -3px;
       box-shadow: -3px 3px 0 #A758AE;
     }
-
     .btn-edit::after {
         top: 1px;
         left: -2px;
         width: 4px;
         height: 4px;
-      }
-      
+      } 
       .btn-edit::before {
         bottom: -2px;
         right: 1px;
         width: 4px;
         height: 4px;
       }
-
- 
-
   a.btn-edit { position: relative; }
   a:active.btn-edit {
     top: 6px;
@@ -280,10 +241,6 @@
       top: 1px;
       left: 1px;
     }
-
-
-
-
 /* sobre mi  */
 .imagen-perfil-sobremi{
     display: flex;
@@ -388,7 +345,6 @@
     transform: scale(23);
   }
 
-
 .card1:hover {
     transition: all 0.3s ease-out;
     color: rgba(255, 255, 255, 0.8);
@@ -415,16 +371,11 @@ box-shadow: 10px 10px 31px -12px rgba(0,0,0,0.75);
     background-size: cover;
     background-attachment: fixed;
 }
- 
-
-
-
 /* enlaces a  */
 a{
     text-decoration: none;
     color: var(--color-text-secondary); 
 }
-
 a:hover{
     color: var(--color-primary);
 }
@@ -488,9 +439,6 @@ a:hover{
     object-fit: cover;
     border-radius: 10px;
 }
-
-/* titulo proyectos  */
-/* titulos bold  */
 .titulo-experiencia, 
 .titulo-experiencia-academica, 
 .titulo-proyect-cotacyt, 
@@ -528,67 +476,7 @@ a:hover{
     opacity: 0.1;
     top: 0;
 }
-
-/* titulos fondos  */
-.titulo-proyect-cotacyt::before{
-    position: absolute;
-    content: "COTACYT";
-    font-size: 30px;
-    opacity: 0.1;
-    top: 0;
- }
-
- .titulo-proyect-plataforma::before{
-    position: absolute;
-    content: "Plataforma Premio Estatal 2020";
-    font-size: 30px;
-    opacity: 0.1;
-    top: 0;
- }
-
- .titulo-proyect-congreso::before{
-    position: absolute;
-    content: "Congreso ITSM 2020";
-    font-size: 30px;
-    opacity: 0.1;
-    top: 0;
- }
-
- .titulo-proyect-next::before{
-    position: absolute;
-    content: "NextPhoto";
-    font-size: 30px;
-    opacity: 0.1;
-    top: 0;
- }
-
- .titulo-proyect-borrados::before{
-    position: absolute;
-    content: "Borrado´s Crochet";
-    font-size: 30px;
-    opacity: 0.1;
-    top: 0;
- }
-
-
- .titulo-proyect-kabum::before{
-    position: absolute;
-    content: "KABUM";
-    font-size: 30px;
-    opacity: 0.1;
-    top: 0;
- }
-
- .titulo-proyect-kfood::before{
-    position: absolute;
-    content: "KFood";
-    font-size: 30px;
-    opacity: 0.1;
-    top: 0;
- }
-
  
-
 
 /* etiquetas proyectos  */
 .etiqueta-proyect{
@@ -598,8 +486,6 @@ a:hover{
     border-radius: 5px;
     margin: 2px;
 }
-
-
 
 /* tecnologias  */
 .imagen-logos-tecnologias{
@@ -628,7 +514,6 @@ a:hover{
   perspective:1000px;
 }
 
- 
 .render {
     position: relative;
     background-color: #A758AE;
@@ -661,10 +546,6 @@ a:hover{
       rgba(16, 16, 16, 0.2) 1px 26px 35px,
       rgba(16, 16, 16, 0.4) 1px 30px 65px,
    }
- 
-  
-  /* clase de footer mover */
-
   /* contacto  */
   .imagen-forma-footer{
     position: absolute;
@@ -674,7 +555,6 @@ a:hover{
     opacity: .5;
 }
 
-
 .imagen-forma-footer-derecha{
     position: absolute;
     top:10%;
@@ -682,7 +562,6 @@ a:hover{
     width: 11%;
     opacity: .5;
 }
-
 
 .imagen-forma-proyect{
     position: absolute;
@@ -706,7 +585,6 @@ a:hover{
     border-radius: 20px;
 }
  
-
 .navbar-toggler{
     color: #fff;
     background-color: #A758AE;
@@ -715,8 +593,6 @@ a:hover{
 .navbar-toggler-icon{
     color: #fff;
 }
-
-
 
 .btn-mas-proyectos{
   background-color: transparent;
@@ -737,15 +613,11 @@ a:hover{
    background-color: #a758ae46;
 }
 
- 
-
-
 // temas
 .tema-dark {
   background-color: var(--color-black);
   transition: 0.8s;
 
- 
   // seccion sobre mi 
   .seccion .color-text-secondary{
     color: rgb(218, 218, 218);
@@ -793,17 +665,10 @@ a:hover{
     color: rgb(218, 218, 218);
     transition: 0.8s;
   }
-
-
-
-  
 }
-
 .tema-light{
     background-color: var(--color-white);
     transition: 0.8s;
-
-    // seccion sobre mi 
   .seccion .color-text-secondary{
     color: var(--color-black);
     transition: 0.8s;
@@ -813,17 +678,9 @@ a:hover{
     background-color: var(--color-white);
     color: var(--color-black);
     transition: 0.8s;
-
-   
   }
   // seccion home 
   }
-
-
-
-
-
-
 // media 
 @media (max-width: 900px){
     .imagen-perfil-sobremi{
@@ -836,7 +693,6 @@ a:hover{
         font-size: 12px;
     }
 }
-
 @media (max-width: 600px){
     .render{
         font-size: 50px;
@@ -846,15 +702,10 @@ a:hover{
         margin-right: auto;
     }
 }
-
 @media (max-width: 570px){
     .render{
         font-size: 30px;
     }
-    /* .titulo-experiencia, 
-    .titulo-experiencia-academica{
-        font-size: 20px;
-    }  */
     .titulo-experiencia::before{
         font-size: 30px;
     } 
@@ -864,8 +715,6 @@ a:hover{
     .titulo-experiencia-academica::before{
         font-size: 30px;
     }
-  
-    
 }
 
 @media (max-width: 380px){
@@ -877,7 +726,6 @@ a:hover{
         margin: auto;
     }
 }
-
 @media ( max-width: 580px){
     .text-presentacion{
         font-size: 14px;
